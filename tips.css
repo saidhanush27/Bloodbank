@@ -1,0 +1,47 @@
+.tips-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.tips-container h1 {
+    text-align: center;
+    color: #d9534f;
+}
+
+.tips {
+    margin: 20px 0;
+}
+
+.tips h2 {
+    color: #000001;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tips ul li {
+    background: #ea7b7b;
+    color: #000001;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.image-container {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 200px; /* Optional: Takes the full height of the viewport */
+    gap: 30px;
+     
+
+  }
+  
+  

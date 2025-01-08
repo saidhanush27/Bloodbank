@@ -1,0 +1,39 @@
+.block-9 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically if needed */
+    height: 100vh;          /* Full viewport height for centering */
+    width:120%;
+}
+
+.main-contact-form {
+    width: 100%;            /* Full width */
+    max-width: 500px;      /* Maximum width for the form */
+    padding: 20px;         /* Padding inside the form */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px;    /* Optional rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form elements */
+}
+
+.text-center {
+    text-align: center; /* Center text in each group */
+}
+
+
+/* Center the image using flexbox */
+.centered-image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Add space above the image */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.centered-image {
+    max-width: 40%;
+    width: 400px;
+    height:300px;
+}

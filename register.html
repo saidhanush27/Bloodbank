@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LifeLine-Blood Bank</title>
+    <link rel="icon" href="images/giphy.gif">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="./utils.css">
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <link rel="stylesheet" href="./open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    <link rel="stylesheet" href="./magnific-popup.css">
+    <link rel="stylesheet" href="./aos.css">
+    <link rel="stylesheet" href="./ionicons.min.css">
+    <link rel="stylesheet" href="./bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./jquery.timepicker.css">
+    <link rel="stylesheet" href="./flaticon.css">
+    <link rel="stylesheet" href="./icomoon.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="py-3 wrap-login100 pcontainInnerHoriz" style="max-width: 600px; margin: auto; background: white; border-radius: 10px; padding: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
+            <form action="process_form.php" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <h3 style="text-align: center;">Sign Up</h3>
+                <label for="first_name" style="font-weight: bold; color: #333;">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="last_name" style="font-weight: bold; color: #333;">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="age" style="font-weight: bold; color: #333;">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="65" maxlength="2" pattern="\d{2}"  required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="cityName" style="font-weight: bold; color: #333;">City:</label>
+                <select id="cityName" name="cityName" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                    <option value="" disabled selected>Choose your city</option>
+                    <option value="Hosur">Hosur</option>
+                    <option value="Attibele">Attibele</option>
+                    <option value="Shoolagiri">Shoolagiri</option>
+                    <option value="Denkanikottai">Denkanikottai</option>
+                    <!-- Add more cities as needed -->
+                </select>
+                <label for="email" style="font-weight: bold; color: #333;">Email:</label>
+                <input type="email" id="email" name="email" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="phone" style="font-weight: bold; color: #333;">Phone:</label>
+                <input type="text" id="phone" name="phone" maxlength="10" pattern="\d{10}" title="please enter exactly 10 digits!"    required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="address" style="font-weight: bold; color: #333;">Address:</label>
+                <input type="text" id="address" name="address" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="username" style="font-weight: bold; color: #333;">Username:</label>
+                <input type="text" id="username" name="username" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="password" style="font-weight: bold; color: #333;">Password:</label>
+                <input type="password" id="password" name="password" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                <label for="bloodType" style="font-weight: bold; color: #333;">Blood Type:</label>
+                <select id="bloodType" name="bloodType" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                    <option value="" disabled selected>Choose your blood type</option>
+                    <option value="A+">A+</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    <!-- Add more blood types as needed -->
+                </select>
+
+                <label style="font-weight: bold; color: #333;">Gender:</label>
+                <div style="display: flex; gap: 10px;">
+                    <label for="male" style="font-weight: normal; color: #333;">
+                        <input type="radio" id="male" name="gender" value="male" required> Male
+                    </label>
+                    <label for="female" style="font-weight: normal; color: #333;">
+                        <input type="radio" id="female" name="gender" value="female" required> Female
+                    </label>
+                </div>
+                <p>Already have an account!&nbsp;<a href="login.html" class="link-warning">Log in</a></p>
+                <button type="submit" style="padding: 15px; border-radius: 5px; border: none; background-color: #7e0402; color: white; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+                    Submit 
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+        </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

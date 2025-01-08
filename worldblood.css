@@ -1,0 +1,141 @@
+/* World Donor Day Section */
+.world-donor-day {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    border-top: 5px solid #ff4757;
+    margin: 2rem 0;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.world-donor-day h2 {
+    font-size: 2.5rem;
+    color: #ff4757;
+    margin-bottom: 2rem;
+}
+
+.paragraphs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Paragraph Block Styles */
+.paragraph {
+    flex: 1 1 calc(50% - 2rem);  /* Ensure two items per row with margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-height: 350px;  /* Ensure uniform height */
+}
+
+.paragraph h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.paragraph p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Ensure the "Call to Action" button is at the bottom of the container */
+.paragraph:last-child p {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .paragraph {
+        flex: 1 1 100%;  /* Full-width on smaller screens */
+    }
+}
+
+/* Center image styling */
+.center-image {
+    display: block;
+    margin: 20px auto; /* Automatically centers the image horizontally */
+    width: 500px;   /* Ensures the image does not overflow its container */
+    height: 400px;      /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+/* Adjust hero-wrap height */
+.hero-wrap {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack text and image vertically */
+}
+
+.hero-wrap h2 {
+    margin-bottom: 20px; /* Add space between the text and the image */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance text visibility */
+}
+
+
+/* General section image styling */
+.section-image {
+    max-width: 100%;  /* Ensure image does not overflow its container */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Ensure the image is treated as a block element */
+    margin: 20px auto; /* Center the image horizontally and add some margin */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+}
+
+/* Centering images and aligning content in paragraphs */
+.paragraph {
+    text-align: center; /* Center text inside the paragraph */
+}
+
+/* For larger screens, keep the layout organized */
+@media (min-width: 768px) {
+    .paragraph {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .section-image {
+        max-width: 80%; /* Ensure the image does not take the full width */
+        margin-bottom: 20px; /* Add space below the image */
+        height: 50%;
+        width: 50%;
+    }
+}
+
+/* For smaller screens, images will stay centered above the text */
+@media (max-width: 767px) {
+    .section-image {
+        max-width: 100%; /* Image will take full width on smaller screens */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+}
+
+
