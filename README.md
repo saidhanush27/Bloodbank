@@ -8,7 +8,7 @@ The **Lifeline Blood Bank Web Portal** is a web-based application that allows us
 - **Blood Requests: Users can request blood from a nearby blood bank.
 - Blood Donation: Donors can register their details to offer blood.
 - Admin Panel: Admins can manage blood donations, requests, and user accounts.
-- [Screenshot 2024-10-21 112104.png]
+  ![image alt](Screenshot 2024-10-21 112104.png)
 
 ## Installation
 
